@@ -10,7 +10,7 @@ function Students() {
   const [editStudentId, setEditStudentId] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:8080/api/students")
+    fetch("http://localhost:8082/api/students")
       .then((response) => response.json())
       .then((students) => {
             setStudents(students);
